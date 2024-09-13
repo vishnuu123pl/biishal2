@@ -95,6 +95,6 @@ SETTINGS = {
             'third_verify_time': THREE_VERIFY_GAP
     }
 DEFAULT_POST_MODE = {
-    'singel_post_mode' : False,
-    'all_files_post_mode' : False
+    'singel_post_mode' : True,
+    'all_files_post_mode' : True
 }
