@@ -15,14 +15,14 @@ def is_enabled(value, default):
 #main variables
 API_ID = int(environ.get('API_ID', '13305226'))
 API_HASH = environ.get('API_HASH', '8cde2475d6b0cb1162b89ebbac71a95d')
-BOT_TOKEN = environ.get('BOT_TOKEN', '7117702689:AAGD6HDp9GY4E9hsRaGZulPlQHGrOF2OU80')
+BOT_TOKEN = environ.get('BOT_TOKEN', '6375200576:AAGVJdULNUtf1S2qRaZrXvXlVVytXuzJ-OQ')
 
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1258310642 6577722992').split()]
 USERNAME = environ.get('USERNAME', "https://telegram.me/Mallu_adminbot")
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001906470657'))
 MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/+pv6pyymMy1tmZGY1')
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002242676006').split()]
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://V:V@cluster0.ommvnlw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002244828029 -1002232982072 -1002154239139 -1002228120220').split()]
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://V:V@cluster0.3smgvla.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
 DATABASE_NAME = environ.get('DATABASE_NAME', "TELEGRAM_BOT_INFO")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
@@ -39,13 +39,13 @@ LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1001906470657'))
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/Asianet_serial_HPM/329")
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/1669ab9af68eaa62c3ca4.jpg")
 SHORTENER_API = environ.get("SHORTENER_API", "fd85d405b577f2cd524e5d8a185505383d0d4e97")
-SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", 'inshorturl.com')
-SHORTENER_API2 = environ.get("SHORTENER_API2", "fd85d405b577f2cd524e5d8a185505383d0d4e97")
-SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", 'inshorturl.com')
+SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", '')
+SHORTENER_API2 = environ.get("SHORTENER_API2", "")
+SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", '')
 SHORTENER_API3 = environ.get("SHORTENER_API3", "")
 SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", '')
-TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "43200"))
-THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "43200"))
+TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', ""))
+THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', ""))
 
 LANGUAGES = ["hindi", "english", "telugu", "tamil", "kannada", "malayalam", "bengali", "marathi", "gujarati", "punjabi"]
 QUALITIES = ["HdRip","web-dl" ,"bluray", "hdr", "fhd" , "240p", "360p", "480p", "540p", "720p", "960p", "1080p", "1440p", "2K", "2160p", "4k", "5K", "8K"]
@@ -95,6 +95,6 @@ SETTINGS = {
             'third_verify_time': THREE_VERIFY_GAP
     }
 DEFAULT_POST_MODE = {
-    'singel_post_mode' : True,
-    'all_files_post_mode' : True
+    'singel_post_mode' : False,
+    'all_files_post_mode' : False
 }
